@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +32,11 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: Roboto;
+  background: url("img/bgimage/derevia-ozero-iosemitskii-natsionalnyi-park-ssha-les.jpg") center/cover no-repeat fixed;
+}
+html input::-webkit-input-placeholder, body input::-webkit-input-placeholder {
+  color: #afafaf;
 }
 
 input, button, textarea {
