@@ -7,6 +7,8 @@ const initialState = {
     clouds: null,
     temp: null,
     windSpeed: null,
+    humidity: null,
+    fellsLike: null,
 }
 
 
@@ -18,8 +20,8 @@ const mainReducer = (state = initialState, action) => {
             return state
     }
 }
-const getData = (clouds, temp, windSpeed,city) =>
-    ({type: GET_DATA, payload: {clouds, temp, windSpeed,city}})
+const getData = (clouds, temp, windSpeed,city, humidity,feelsLike) =>
+    ({type: GET_DATA, payload: {clouds, temp, windSpeed,city, humidity, feelsLike}})
 
 export const getDataThunk = (value) => async (dispatch) => {
     const response = await weatherAPI.getData(value)
@@ -27,8 +29,10 @@ export const getDataThunk = (value) => async (dispatch) => {
     const temp = response.main.temp
     const windSpeed = response.wind.speed
     const city = response.name
-    debugger
-    dispatch(getData(clouds,temp,windSpeed,city))
+    const humidity = response.main.humidity
+    const feelsLike = response.main.feels_like
+
+    dispatch(getData(clouds,temp,windSpeed,city, humidity, feelsLike))
 
 }
 

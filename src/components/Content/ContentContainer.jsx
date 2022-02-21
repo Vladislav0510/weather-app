@@ -6,8 +6,6 @@ const mapStateToProps = (state) => {
         city: state.main.city,
         clouds: state.main.clouds,
         temp: state.main.temp,
-        windSpeed: state.main.windSpeed,
-
     }
 }
 

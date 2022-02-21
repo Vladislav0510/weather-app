@@ -1,3 +1,25 @@
 .main{
   color: #fff;
+  padding: 140px 0;
+  min-height: 70vh;
+
+}
+.main__body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__city{
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+.main__temp{
+  font-size: 24px;
+  line-height: 150%;
+}
+.main__clouds{
+  transform: rotate(270deg);
+  font-size: 24px;
 }
