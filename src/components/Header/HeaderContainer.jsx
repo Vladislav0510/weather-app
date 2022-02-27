@@ -3,8 +3,9 @@ import {getDataThunk} from "../../redux/mainReducer";
 import {connect} from "react-redux";
 
 const mapStateToProps = (state) => {
+    debugger
     return {
-
+        error: state.main.errorData
     }
 }
 

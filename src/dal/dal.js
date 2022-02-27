@@ -12,5 +12,5 @@ export const weatherAPI = {
             .then(response => response.data)
     }
 }
-console.log(weatherAPI.getData('Minsk'))
+//console.log(weatherAPI.getData('Minsk'))
 

@@ -3,9 +3,9 @@ import Footer from "./Footer";
 
 const mapStateToPtops = (state) => {
     return {
-        windSpeed: state.main.windSpeed,
-        humidity: state.main.humidity,
-        feelsLike: state.main.feelsLike,
+        windSpeed: state.main.weatherData.windSpeed,
+        humidity: state.main.weatherData.humidity,
+        feelsLike: state.main.weatherData.feelsLike,
     }
 }
 
